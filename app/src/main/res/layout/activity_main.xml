@@ -1,0 +1,79 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_vertical"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="350dp"
+        android:layout_height="275dp"
+
+
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/backbox"
+        android:text="Balance:\n\n\nCost of book:\n\n\nRemaining balance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />@color/colorAccent"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/button8"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="173dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Confirm"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Cancel"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/button8" />
+
+</android.support.constraint.ConstraintLayout>
+
